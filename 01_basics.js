@@ -6,3 +6,5 @@
 -Current version while learning is ECMAScript 2023
 */
 console.log("Hello world");
+
+//basics done keep goning
