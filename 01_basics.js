@@ -5,4 +5,4 @@
 -Both founded by Ryan Dahl
 -Current version while learning is ECMAScript 2023
 */
-console.log("Hello world");
+console.log("Hello world ");
