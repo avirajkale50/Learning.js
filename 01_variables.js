@@ -1,4 +1,4 @@
-"use strict"; // to ebable the strict mode
+//"use strict"; // to ebable the strict mode
 //by default these days the javascript is in strict mode 
 
 const accountId = 1234
