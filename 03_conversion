@@ -1,0 +1,57 @@
+
+//let score = 33
+
+//typeof use to check the type of the variable in normal way
+//console.log(typeof score);
+
+//typeof can use as function
+//console.log(typeof (score));
+
+// conversion of the into number
+
+//normal conversion
+//let score = "33"
+
+//console.log(typeof score,score)//score as number
+//score = Number(score) //String converted to Number
+//console.log(typeof score,score)//score as string
+
+//corner case
+//let score = "33abc"
+
+//console.log(typeof score,score)//score as number
+//score = Number(score) //String converted to Number
+//console.log(typeof score,score)//score as string
+
+//Note : The string is not a actual number so it get converted in NaN which have the data type number
+
+//for null
+//let n = null
+//n = Number(n)
+//console.log(typeof n,n)//nul get converted to the 0
+
+//conversion into String
+
+//let  score = 33;
+//console.log( typeof score,score)//score as the number 
+//score = String(score)//conversion of Number to string
+//console.log( typeof score,score)//score as the String
+
+//conversion into boolean
+ 
+//let isLoggedIn = true;
+//console.log(typeof isLoggedIn,isLoggedIn)//normal type checking
+
+//let a = "avi"
+//a = Boolean(a);
+//console.log(typeof a,a)//if string get converted it also returns the true
+
+let yes = 1,no = 0;//we can declare more variable at a time
+console.table([yes,typeof yes,no,typeof no])
+
+yes = Boolean(yes)
+no = Boolean(no)
+
+console.table([yes,typeof yes,no,typeof no])
+
+//Hence in this lecture how to convert datatype mainly the Number,Boolean and String and there different variation
