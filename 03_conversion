@@ -46,12 +46,58 @@
 //a = Boolean(a);
 //console.log(typeof a,a)//if string get converted it also returns the true
 
-let yes = 1,no = 0;//we can declare more variable at a time
-console.table([yes,typeof yes,no,typeof no])
+//let yes = 1,no = 0;//we can declare more variable at a time
+//console.table([yes,typeof yes,no,typeof no])
 
-yes = Boolean(yes)
-no = Boolean(no)
+//yes = Boolean(yes)
+//no = Boolean(no)
 
-console.table([yes,typeof yes,no,typeof no])
+//console.table([yes,typeof yes,no,typeof no])
 
 //Hence in this lecture how to convert datatype mainly the Number,Boolean and String and there different variation
+
+
+
+//************************************************Operations**********************************************************//
+
+//Arithmatic Operator
+// console.log(2+2); summation
+// console.log(2-2); subtraction
+// console.log(2*2); multiplication
+// console.log(2/2); division
+// console.log(2**2); power
+// console.log(2%2); modulus
+
+//string concatination
+
+// let str1 = "Hii "
+// let str2 = "Kumar"
+// let str3 = str1 + str2
+// console.log(str3);
+
+//trick questions
+
+// console.log("1" + 2 );//output 12 as string
+// console.log(1 + "2" );//output 12 as string
+// console.log("1" + 2  + 2);//output 122 as a string
+// console.log(1 + 2 + "2");//output 32 as a string
+
+//Note : The associaty in the javascript is left to right
+//>>refer this code to check
+// function echo(pharse , num){
+//  console.log(pharse,num)
+// }
+// console.log(echo("left", 4) / echo("middle", 3) ** echo("right", 2));
+
+//NOTE : Your code should be clean and add parenthesis where ever necessary
+
+// console.log(+true);//output - 1
+// console.log(+"");//output - 0
+
+
+//post and pre increment
+let gameCounter = 3;
+console.log(gameCounter++)//increment value after use 
+console.log(++gameCounter)//increment value before use
+console.log(gameCounter--)//increment value after use
+console.log(--gameCounter)//increment value before use
