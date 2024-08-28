@@ -3,17 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <title>Learning-DOM</title>
+    <style>
+        body{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
     <div class="bg-black">
-        <h1 class ="heading">DOM learning on the chai or code</h1>
+        <h1 class ="heading" id="first-heading">DOM learning on the chai or code <span style="display: none;">test text</span></h1>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
         <p>Lorem ipsum dolor sit amet.</p>
+
+        <ul>
+            <li class="list">one</li>
+            <li class="list">two</li>
+            <li class="list">three</li>
+            <li class="list">four</li>
+        </ul>
     </div>
 </body>
 </html>
+
+<!-- notes -->
 <!-- 
     //DOM is the document object model which represent the page sturcture
     //to select the just see the document we can use
     console.log(window.document);
     console.log(document);
+
+    //example of how we able to select the element
+    document.getElementById('first-heading')
+
+    //example of the element how we able to manipulate it
+    document.getElementById('first-heading').innerHTML = "<h1> Aviraj is BACK</h1>";
+
+
+    --------------------------------------------------------------------------------------------------
+
+    to select the element in the DOM
+
+    1.select the element with the id
+     
+    document.getElementById('class-name')  //getElementById is a method here
+
+    here some ways to know the properties of the element
+
+    document.getElementById('class-name').id //returns the id of the element
+    document.getElementById('class-name').className //returns the class 
+    //here the .class will not work and it is the reason why we use className in react
+    
+
+    Also another way to selecting or finding the attributes
+    document.getElementById('first-heading').getAttribute('id') //returns id
+    document.getElementById('first-heading').getAttribute('class') //returns class
+
+    here to overwrite the element in the html
+    ex.
+    document.getElementById('first-heading').setAttribute('class','test')
+
+    -we use the .style in the js to make the change in the element 
+    here is the example
+            const title = document.getElementById('first-heading')
+            undefined
+            title
+            <h1 class=​"heading" id=​"first-heading">​DOM learning on the chai or code​</h1>​
+            title.st
+            undefined
+            title.style.backgroundColor = 'green'
+            'green'
+            title.style.padding = '15px'
+            '15px'
+            title.style.borderRadius = '15px'
+            '15px'
+
+    //interesting
+    how we add the content 
+
+    title.textContent
+    'DOM learning on the chai or code'
+    title.innerHTML
+    'DOM learning on the chai or code'
+    title.innerText
+    'DOM learning on the chai or code'
+
+    1.textContent
+    2.innerHTML
+    3.innerText
+    are use to get the text inside text in the html but they have some small difference 
+    ..1
+    innerText and textContent
+    ex.
+        title.innerText
+        'DOM learning on the chai or code'
+        title.textContent
+        'DOM learning on the chai or code test text'
+    here we added a span and set is display to none so innerText not return it but textContent return all the text inside the element
+    ..2
+    ex.
+        title.innerHTML
+        'DOM learning on the chai or code <span style="display: none;">test text</span>'
+    it also return the html inside the element
+    
+    **some important querySelector**
+    document.querySelector() //returns the first element according to which value we pass in it
+
+    ex.
+    document.querySelector('h1') //returns the first h1
+    document.querySelector('#id-name') //returns the first element having that id
+    document.querySelector('.className') //returns the first element having that class
+
+    we use the css selector here to select
+
+    document.querySelectorAll() //select all for the value we pass inside it
+    //it return you the nodelist which is not actual array but it have some property of the array [] - like using bracket to access the element and also the for each
+
+    NodeList objects are collections of nodes, usually returned by properties such as Node.childNodes and methods such as document.querySelectorAll().
+
+    //Example :
+    tempLiList.forEach((l)=>{
+    l.style.color = "red"
+    })
+
+
+    //this type of the code 
+    document.getElementsByClassName("list")
+    return the html collection
+    to convert it in the array
+    const myConvertedArray = Array.from(tempList)
+    
  -->
