@@ -10,10 +10,10 @@
       body {
         background-color: #212121;
         color: #fff;
+        height: 100vh;
       }
       .center {
         display: flex;
-        height: 100vh;
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -25,18 +25,24 @@
         margin-top: 10px;
         border-radius: 10px;
       }
+      .con{
+        margin: 200px;
+      }
+      #banner{
+        font-size: xx-large;
+        text-align: center ;
+      }
     </style>
   </head>
   <body>
     <nav>
       <a href="/" aria-current="page">Home</a>
-      <a target="_blank" href="https://www.youtube.com/@chaiaurcode"
-        >Youtube channel</a
-      >
     </nav>
     <div class="center">
+      <div class="con">
       <div id="banner"><span>Your local time</span></div>
       <div id="clock"></div>
+    </div>
     </div>
     <script src="script.js"></script>
   </body>

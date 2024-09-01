@@ -10,12 +10,21 @@ html {
     width: 80%;
     text-align: center;
   }
-  
+  .canvas h1{
+    font-size: 4rem;
+    font-weight: bold;
+    background-color: #fff;
+    border-radius: 20px;
+  }
   .button {
+    border-radius: 10px;
     width: 100px;
-    height: 100px;
+    height: 50px;
     border: solid black 2px;
     display: inline-block;
+  }
+  .button:hover {
+    border: solid rgb(90, 90, 90) 2px;
   }
   
   #grey {
@@ -31,4 +40,6 @@ html {
   #yellow {
     background: yellow;
   }
-  
+  #purple{
+    background: purple;
+  }

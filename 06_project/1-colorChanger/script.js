@@ -1,5 +1,6 @@
 const buttons = document.querySelectorAll('.button');
 const body = document.querySelector('body');
+const h1 = document.querySelector('h1')
 
 buttons.forEach((button)=>{
     // console.log(button)
@@ -15,7 +16,26 @@ buttons.forEach((button)=>{
 
 
         //the chai or code applied it
-
+        if (e.target.id === "grey") {
+            body.style.backgroundColor = e.target.id;
+            h1.style.color = e.target.id;
+        }
+        if (e.target.id === "white") {
+            body.style.backgroundColor = e.target.id;
+            h1.style.color = "#000";
+        }
+        if (e.target.id === "blue") {
+            body.style.backgroundColor = e.target.id;
+            h1.style.color = e.target.id;
+        }
+        if (e.target.id === "yellow") {
+            body.style.backgroundColor = e.target.id;
+            h1.style.color = e.target.id;
+        }
+        if (e.target.id === "purple") {
+            body.style.backgroundColor = e.target.id;
+            h1.style.color = e.target.id;
+        }
         
 
     })
