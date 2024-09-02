@@ -3,15 +3,12 @@ html {
   }
   
   body {
-    background-image: radial-gradient( circle farthest-corner at 3.2% 49.6%,  rgba(80,12,139,0.87) 0%, rgba(161,10,144,0.72) 83.6% );;
+    background-image: radial-gradient( circle farthest-corner at 3.2% 49.6%,  rgba(80,12,139,0.87) 0%, rgba(161,10,144,0.72) 83.6% );
 
   } 
   .container{
-    width: 100%;
-    max-width: 750px;
-    min-width: 480px;
-    margin: 50px auto;
-    
+    width: 90%;
+    margin: 20px auto;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -31,7 +28,7 @@ html {
   }
   
   button {
-    background-color: #141414;
+    background-color: #a4a4a4;
     color: #fff;
     width: 250px;
     height: 50px;
@@ -43,7 +40,8 @@ html {
   }
   
   #subt {
-    background-color: #161616;
+    background-image: radial-gradient( circle farthest-corner at 3.2% 49.6%,  rgba(80,12,139,0.87) 0%, rgba(161,10,144,0.72) 83.6% );
+    box-shadow: #fff 2px 2px 2px;
     color: #ffffff;
     width: 200px;
     height: 50px;
@@ -53,7 +51,10 @@ html {
     margin-top: 50px;
     /* margin-left: 75px; */
   }
-  
+  #subt:hover{
+    box-shadow: #fff 3px 3px 3px;
+    background-image: radial-gradient( circle farthest-corner at 3.2% 49.6%,  rgba(161,10,144,0.72) 0%, rgba(80,12,139,0.87) 83.6% );
+  } 
   #guessField {
     color: #000;
     width: 250px;
@@ -63,19 +64,23 @@ html {
     margin-top: 25px;
   
     /* margin-left: 50px; */
-    border: 5px solid #6c6d6d;
+    border: 2px solid #6c6d6d;
+    border-radius: 5px;
     text-align: center;
   }
   
   #guess {
-    font-size: 55px;
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     /* margin-left: 90px; */
     margin-top: 120px;
-    color: #fff;
+    
   }
   
   .guesses {
-    background-color: #7a7a7a;
+    color: #000;
+    background-color: #fff;
+    border-radius: 5PX;
   }
   
   #wrapper {
@@ -85,15 +90,13 @@ html {
     font-size: 25px;
   }
   
-  h1 {
-    background-color: #161616;
-  
-    color: #fff;
+  #wrapper h1 {
+    font-size: 4rem;
     text-align: center;
   }
   
   p {
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
   }
   

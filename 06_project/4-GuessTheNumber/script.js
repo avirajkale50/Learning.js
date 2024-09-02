@@ -53,12 +53,12 @@ function validateGuess(guess){
 //match the value with random
 function checkGuess(guess){
     if(guess === randomNumber){
-        displayMessage(`You guess it right`)
+        displayMessage(`You guess it right😉`)
         endGame();
     }else if(guess < randomNumber){
-        displayMessage(`Number is TOO low`)
+        displayMessage(`Number is TOO low😱`)
     }else if(guess > randomNumber){
-        displayMessage(`Number is TOO high`)
+        displayMessage(`Number is TOO high😱`)
     }
 }
 function displayGuess(guess){
@@ -79,7 +79,7 @@ function endGame(){
     userInput.value = ''
     userInput.setAttribute('disabled','')
     p.classList.add('button')
-    p.innerHTML = `<h2 id ="newGame">Start New Game</h2>`
+    p.innerHTML = `<h2 id ="newGame">Start New Game🤠</h2>`
     startOver.appendChild(p)
     playGame = false
     newGame()
