@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>understanding the async</title>
+</head>
+<body>
+    <h1>Infinite Void</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    //setTimeout()
+    //setTimeout(function(){
+    //    console.log("Aviraj")
+    //},2000)
+    //wait for the delay and execute the callback
+    //another way to write this code is
+    function sayAviraj(){
+        console.log("Hii Avi");
+    }
+    setTimeout(sayAviraj,2000)//refrence of the fuction is passed
+    //example
+    const changeText = function(){
+         document.querySelector('h1').innerHTML = "अत्यन्तशून्यता"
+    }
+    const changeMe = setTimeout(changeText,2000)
+
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(changeMe)//this will stop the set timeout fuction form the execution of the code
+        console.log('stop')
+    })
+    //to stop the setTimeout we use the clear time out
+
+</script>
+</html>

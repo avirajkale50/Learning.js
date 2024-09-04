@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async code learning</title>
+</head>
+<body>
+    <h1>Infinite Void</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+</body>
+<script>
+    //way to write the setInterval
+    //setInterval(function(){
+    //  console.log("Aviraj",Date.now())
+    //},1000)
+    //execute callback after each delay
+
+    //another way to write it
+    const sayDate = function(str){
+        console.log(str,Date.now())
+    }
+    
+
+    //adding the fuction as setInterval and clearInterval at start and stop
+    const start = document.querySelector('#start')
+    const Stop = document.querySelector('#stop');
+    let interval
+    start.addEventListener('click',function(){
+        interval = setInterval(sayDate,1000,"hi")
+    });
+    Stop.addEventListener('click',function(){
+        clearInterval(interval);
+    })
+</script> 
+</html>
