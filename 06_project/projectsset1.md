@@ -243,3 +243,76 @@ document.querySelector('#stop').addEventListener('click', stopChangingColor);
 
 
 ```
+
+
+
+# Project 7 Solution
+
+```javascript
+
+
+```
+
+# Project 8 Solution
+
+```javascript
+
+
+```
+
+# Project 9 Solution
+
+```javascript
+
+
+```
+
+# Project 10 Solution
+
+```javascript
+
+
+```
+
+# Project 11 Solution
+
+```javascript
+
+
+```
+
+# Project 12 Solution
+
+```javascript
+
+
+```
+
+# Project 13 Solution
+
+```javascript
+
+
+```
+
+# Project 14 Solution
+
+```javascript
+
+
+```
+
+# Project 15 Solution
+
+```javascript
+
+
+```
+
+
+# Project 16 Solution
+
+```javascript
+
+
+```

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XMLHttpRequest</title>
+    <style>
+        table,td,th{
+            border: 1px solid #fff;
+            padding: 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body style="color: #fff;background-color:#212121">
+    <table>
+        <thead>
+          <tr>
+            <th>Value</th>
+            <th>State</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>0</code></td>
+            <td><code>UNSENT</code></td>
+            <td>Client has been created. <code>open()</code> not called yet.</td>
+          </tr>
+          <tr>
+            <td><code>1</code></td>
+            <td><code>OPENED</code></td>
+            <td><code>open()</code> has been called.</td>
+          </tr>
+          <tr>
+            <td><code>2</code></td>
+            <td><code>HEADERS_RECEIVED</code></td>
+            <td><code>send()</code> has been called, and headers and status are available.</td>
+          </tr>
+          <tr>
+            <td><code>3</code></td>
+            <td><code>LOADING</code></td>
+            <td>Downloading; <code>responseText</code> holds partial data.</td>
+          </tr>
+          <tr>
+            <td><code>4</code></td>
+            <td><code>DONE</code></td>
+            <td>The operation is complete.</td>
+          </tr>
+        </tbody>
+      </table>
+<script>
+    //here we are writing the code which is not use now days but it is the base for the fetch() request which is XMLHttpRequest
+    //here we are sending a request and checking the state for as our request proceed 
+    const requestUrl = 'https://api.github.com/users/avirajkale50'
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', requestUrl);
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState);
+        if(xhr.readyState === 4){
+            const data = JSON.parse(this.responseText)
+            console.log(`Followers : ${data.followers}`)
+        }
+    }
+   
+    xhr.send()
+    //task to create the app where you create a card in which you add the photo of the github user his followers and bio and public repo no. by his user id
+</script>
+</body>
+</html>
