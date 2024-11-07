@@ -37,3 +37,6 @@ function erase() {
 }
 
 type()
+
+//even we can try implementing this with setInterval
+//The main difference in the setInterval and setTimeout is , the setInterval execute function after a specific interval repeatedly and setTimeout execute the function after a specific time
