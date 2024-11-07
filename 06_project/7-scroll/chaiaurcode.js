@@ -12,7 +12,7 @@ let ratioOftatolbyCurrent = 0;
 
 //selecting the div
 let progressbar = document.querySelector(".progress")
-console.log(progressbar)
+// console.log(progressbar)
 addEventListener("scroll", (event) => {
     currentScrollPosition = window.scrollY;
     // console.log(currentScrollPosition);
