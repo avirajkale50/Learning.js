@@ -44,6 +44,7 @@ button {
 
 /* JavaScript */
 div.cursor {
+  cursor: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -53,4 +54,6 @@ div.cursor {
   border-radius: 50%;
   transform: translate(-50%, -50%);
   animation: cursor 6s infinite alternate;
+  /* border:2px groove red; */
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
 }
