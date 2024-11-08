@@ -3,12 +3,13 @@
     border-radius: 40px;
     border:2px solid #212121;
     width: 40%;
-    height: 80vh;
-    background-color: #797978;
+    /* height: 80vh; */
+    background-color: #110064;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color:#fff;
 
   }
 .container h1{
@@ -19,10 +20,12 @@
   
   #weight-guide {
     margin-top: 25px;
+    color: #111;
     background-color: #fff;
     padding: 20px;
     border: 1px solid #212121;
     border-radius: 20px;
+    margin-bottom: 10px;
   }
   
   #results {
