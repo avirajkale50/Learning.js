@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling Vs Event Caputuring</title>
+    <style>
+        .parent{
+            background-color:orange;
+            height: 400px;
+            width: 400px;
+            margin: auto;
+            text-align: center;
+        }
+        .child{
+            background-color:rgb(255, 255, 51);
+            height: 200px;
+            width: 200px;
+        }
+        .grandchild{
+            background-color:rgb(115, 255, 0);
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+            <section class="grandchild">
+            
+
+            </section>
+        </div>
+    </div>
+    <div class="parent">
+        <h1>Color</h1>
+        <p>Color is the important aspect of any website and you should aware about color</p>
+        <p>Like which color suited with which theme which text color go with the background color</p>
+
+        <pre> cool website to refer : <a href="https://meadlight.com/en">https://meadlight.com/en</a></pre>
+    </div>
+</body>
+<script>
+    //Event bubbling 
+    //In event bubbling when you click on the child, the event is propogated to the child like bubble means a bottom up manner
+    const parent = document.querySelector('.parent');
+    const child = document.querySelector('.child');
+    const grandchild = document.querySelector('.grandchild');
+
+
+    //demo for event bubbling
+    parent.addEventListener("click",function(e){
+       alert("parent")
+    })
+
+    child.addEventListener("click",function(e){
+        alert("child")
+    })
+
+    grandchild.addEventListener("click",function(e){
+        alert("grandchild")
+    })
+    //some event do not bubble like,focus,blur,mouseleave,mouseenter
+
+
+
+
+    //what is the difference between the event.target,event.currentTarget,event.this
+    /*parent.addEventListener("click",test)
+    child.addEventListener("click",test)
+    grandchild.addEventListener("click",test)
+
+    function test(event){
+        alert(
+            `Current Target : ${event.currentTarget.tagName} \n
+            Target : ${event.target.tagName} \n
+            This: ${this.tagName} \n
+            `
+        )
+    }*/
+
+
+    //what is event capturing / trickling
+    //event are executed int top / down fashion
+    //demo for event trickling
+    /*parent.addEventListener("click",function(e){
+       alert("parent")
+    },{
+        capture:true
+    })
+
+    child.addEventListener("click",function(e){
+        alert("child")
+    },{
+        capture:true
+    })
+
+    grandchild.addEventListener("click",function(e){
+        alert("grandchild")
+    },{
+        capture:true
+    })*/
+ 
+
+    //how to stop the event bubbling or capturing 
+    //we stop event bubbling or capturing with the help of stopPropogation
+    /*parent.addEventListener("click",function(e){
+       e.stopPropagation()
+       alert("parent")
+    })
+
+    child.addEventListener("click",function(e){
+        e.stopPropagation()
+        alert("child")
+    })
+
+    grandchild.addEventListener("click",function(e){
+        e.stopPropagation()
+        alert("grandchild")
+    })*/
+    
+
+
+</script>
+</html>
